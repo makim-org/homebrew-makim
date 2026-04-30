@@ -1,29 +1,18 @@
-This directory is structured so it can be used as the contents of the
-`osl-incubator/homebrew-makim` tap repository.
+# Sanjay7178 Makim
 
-Layout:
+## How do I install these formulae?
 
-- `Formula/makim.rb`: generated Homebrew formula
-- `scripts/generate_formula.sh`: renders the formula from release inputs
-- `scripts/publish_tap.sh`: publishes the generated formula into the tap repo
-- `scripts/test.sh`: smoke test for formula generation
+`brew install sanjay7178/makim/makim`
 
-The release workflow in this repository generates `Formula/makim.rb` here and
-then pushes it to the dedicated tap repository.
+Or `brew tap sanjay7178/makim` and then `brew install maim`.
 
-Local testing:
+Or, in a `brew bundle` `Brewfile`:
 
-```bash
-bash homebrew/scripts/test.sh
+```ruby
+tap "sanjay7178/makim"
+brew "makim"
 ```
 
-Manual generation:
+## Documentation
 
-```bash
-bash homebrew/scripts/generate_formula.sh \
-  --version 1.2.3 \
-  --repo osl-incubator/makim \
-  --amd64-sha256 <amd64_sha256> \
-  --arm64-sha256 <arm64_sha256> \
-  --output homebrew/Formula/makim.rb
-```
+`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
