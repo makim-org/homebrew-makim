@@ -1,15 +1,15 @@
-# Sanjay7178 Makim
+# makim-org Makim
 
 ## How do I install these formulae?
 
-`brew install sanjay7178/makim/makim`
+`brew install makim-org/makim/makim`
 
-Or `brew tap sanjay7178/makim` and then `brew install maim`.
+Or `brew tap makim-org/makim` and then `brew install makim`.
 
 Or, in a `brew bundle` `Brewfile`:
 
 ```ruby
-tap "sanjay7178/makim"
+tap "makim-org/makim"
 brew "makim"
 ```
 
